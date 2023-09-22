@@ -86,4 +86,6 @@ minikube image load django-proxy:latest
 
 docker context use default
 
+kubectl get services
 
+kubectl exec -it django-666595d456-fhzk5 -c app -- python manage.py createsupuser
