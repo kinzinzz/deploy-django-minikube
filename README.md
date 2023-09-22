@@ -61,3 +61,11 @@ docker-compose -f docker-compsoe-deploy.yml up
 ```
 
 This should start a server and support static/media files through the NGINX proxy. You can access the server on [http://127.0.0.1:8080](http://127.0.0.1:8080).
+
+### CMD
+
+docker-compose run --rm app sh -c "python manage.py createsuperuser"
+
+minikube start --nodes 3
+
+minikube dashboard
