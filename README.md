@@ -76,3 +76,14 @@ kubectl get deployments
 
 kubectl get pods
 
+docker buildx build -t django-app:latest .
+
+docker buildx build -t django-proxy:latest proxy/
+
+minikube image load django-app:latest
+
+minikube image load django-proxy:latest
+
+docker context use default
+
+

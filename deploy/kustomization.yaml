@@ -1,4 +1,3 @@
-
 secretGenerator:
   - name: db-password
     literals:
